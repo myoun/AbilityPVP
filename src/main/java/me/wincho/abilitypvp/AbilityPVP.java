@@ -1,14 +1,6 @@
 package me.wincho.abilitypvp;
 
-import me.wincho.abilitypvp.ability.Ability;
-import me.wincho.abilitypvp.ability.ArcherAbility;
-import me.wincho.abilitypvp.ability.BeastAbility;
-import me.wincho.abilitypvp.ability.BoomerAbility;
-import me.wincho.abilitypvp.ability.SoldierAbility;
-import me.wincho.abilitypvp.ability.TankerAbility;
-import me.wincho.abilitypvp.ability.ThiefAbility;
-import me.wincho.abilitypvp.ability.WinChoAbility;
-import me.wincho.abilitypvp.ability.RocketPuncherAbility;
+import me.wincho.abilitypvp.ability.*;
 import me.wincho.abilitypvp.commands.AbilityCommand;
 import me.wincho.abilitypvp.commands.SpectateCommand;
 import me.wincho.abilitypvp.event.EventCaller;
@@ -94,6 +86,8 @@ public class AbilityPVP extends JavaPlugin {
         Ability.registerAbility(WinChoAbility.class, this);
 
         Ability.registerAbility(RocketPuncherAbility.class, this);
+
+        Ability.registerAbility(NinjaAbility.class, this);
 
         Bukkit.getPluginManager().registerEvents(new GameMap(), this);
         Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
