@@ -14,7 +14,6 @@ import org.bukkit.potion.PotionEffectType;
 
 public class BeastAbility extends Ability {
     public BeastAbility() {
-        System.out.println("\uC57C!\uC218\uAC19\uC740 \uB098\uB97C\uB290\uAEF4 \uB125\uC2A4\uD2B8 \uB808\uBCA8");
     }
 
     public BeastAbility(Player player) {
